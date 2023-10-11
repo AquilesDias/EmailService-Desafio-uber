@@ -3,7 +3,9 @@ package com.aquiles.serviceemail.application;
 import com.aquiles.serviceemail.adapters.EmailSenderGateway;
 import com.aquiles.serviceemail.core.EmailSenderUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class EmailSenderService implements EmailSenderUseCase {
 
     private final EmailSenderGateway emailSenderGateway;
